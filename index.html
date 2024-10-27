@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+<body >
+    
+ <div class="container bg-[#A3C1AD] px-6 py-10 w-screen h-screen p-0 m-0">
+    <div class="text-gray-600  text-center font-bold text-5xl font-serif">HANGMAN GAME</div>
+    <div class="box bg-white  flex flex-col relative h-full sm:bg-lime-700 md:flex-row md:bg-pink-400 lg:bg-green-300 justify-around  rounded-md px-8 py-4">
+        <div class="gameover bg-white absolute px-2 py-4 gap-4 left-[20%]  justify-center items-center flex-col rounded-md shadow-2xl flex invisible">
+            <div class="img"><img class="w-24" src="lost copy.gif" alt=""></div>
+            <div class="font-bold text-2xl">Game Over!</div>
+            <div class="font-semibold ">The correct word was: <span class="  fcorrect text-blue-500 ">painting</span></div>
+            <div class="playagain bg-blue-400 px-4 py-2 rounded-md text-white font-semibold">PLAY AGAIN</div>
+        </div>
+        <div class="gamewin bg-white absolute px-2 py-4 gap-4 left-[20%]  justify-center items-center flex-col rounded-md shadow-2xl flex invisible">
+            <div class="img"><img class="w-24" src="victory.gif" alt=""></div>
+            <div class="font-bold text-2xl">Congrats!</div>
+            <div class="font-semibold ">You found the word: <span class="fwin text-blue-500 "></span></div>
+            <div class="playwin bg-blue-400 px-4 py-2 rounded-md text-white font-semibold">PLAY AGAIN</div>
+        </div>
+           <div class="img flex justify-center items-center "><img id="human" class="h-32 md:h-64 lg:h-72" src="hangman-0.svg" alt=""></div>
+           <div class="texting flex flex-col gap-2 md:mt-12 lg:mt-48 lg:w-[50%] lg:gap-12">
+                <div class="input flex flex-row gap-2 mb-2 justify-center">
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl  border-[#6afaff]  flex justify-center font-bold text-xl"></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff]  flex justify-center font-bold text-xl "></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff]  flex justify-center font-bold text-xl "></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff]  flex justify-center font-bold text-xl "></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff]  flex justify-center font-bold text-xl "></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff] flex justify-center font-bold text-xl "></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff] flex justify-center font-bold text-xl "></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff] flex justify-center font-bold text-xl "></div>
+                    <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff] flex justify-center font-bold text-xl "></div>
+                    <!-- <div class="first  border-b-2 w-6 md:w-8 md:border-b-4 md:text-2xl border-[#6afaff] flex justify-center font-bold text-xl "></div> -->
+                </div>
+                <div class=" flex justify-center md:text-2xl"><b>Hint:-</b><span class=" button hint">The study of past events and human civilization</span> </div>
+                <div class="gusses flex justify-center md:text-2xl">Incorrect guesses: <span class=" button text-red-600"><span class=" button incorrect">0</span>/6</span></div>
+                <div class=" box flex gap-1 flex-wrap flex-row justify-center">
+                    <button class="button  w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">A</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">B</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">C</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">D</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">E</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">F</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">G</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">H</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">I</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">J</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">K</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">L</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">M</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">N</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">O</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">P</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">Q</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">R</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">S</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">T</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">U</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">V</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">W</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">X</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">Y</button>
+<button class=" button w-[calc(18%-10px)] bg-blue-500 text-white rounded-[4px] shadow-md">Z</button>
+
+                </div>
+           </div>
+    </div>
+ </div>
+
+
+    <!-- <script src="./js/index.js"></script> -->
+    <!-- <script src="./js/array.js"></script> -->
+    <script type="module" src="./js/index.js" defer></script>
+
+</body>
+</html>

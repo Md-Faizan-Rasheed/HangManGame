@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @media screen and (min-width:500px) {
+ .container{
+    background: pink;
+ }
+ .box{
+    flex-direction: row;
+ }
+ .texting{
+    width: 50%;
+    /* background: lightblue; */
+
+    /* justify-items: center;
+    align-items: center;
+    margin-top: 110px;
+    column-gap: 20px;
+ }
+ .img img{
+    height: 200px;
+ }
+ .img{
+    /* background-color: antiquewhite; */
+   
